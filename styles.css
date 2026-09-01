@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Target Laser Ital";
+  src: url("assets/TARRGETLASERITAL.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --bg: #f7f8fc;
   --surface: #ffffff;
@@ -108,6 +116,27 @@ button {
   white-space: nowrap;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 760;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-name {
+  font-family: "Target Laser Ital", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  white-space: nowrap;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+}
+
 .brand:hover {
   color: var(--text);
 }
@@ -124,6 +153,19 @@ button {
   font-size: 0.73rem;
   font-weight: 800;
   letter-spacing: -0.08em;
+}
+
+.brand-logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+.footer-brand .brand-logo {
+  width: 170px;
+  max-height: 48px;
 }
 
 .menu-toggle {
@@ -402,7 +444,7 @@ h3 {
   box-shadow: 0 4px 10px rgb(35 46 75 / 4%);
 }
 
-.notice-row + .notice-row {
+.notice-row+.notice-row {
   margin-top: 0.55rem;
 }
 
@@ -420,7 +462,7 @@ h3 {
   border-radius: 999px;
 }
 
-.notice-line + .notice-line {
+.notice-line+.notice-line {
   width: 70%;
   margin-top: 0.4rem;
 }
@@ -627,12 +669,12 @@ h3 {
   gap: 1.35rem;
 }
 
-.text-columns > div {
+.text-columns>div {
   padding-bottom: 1.35rem;
   border-bottom: 1px solid var(--border);
 }
 
-.text-columns > div:last-child {
+.text-columns>div:last-child {
   padding-bottom: 0;
   border-bottom: 0;
 }
@@ -647,7 +689,7 @@ h3 {
   padding-left: 1.25rem;
 }
 
-.text-columns li + li {
+.text-columns li+li {
   margin-top: 0.4rem;
 }
 
@@ -672,7 +714,7 @@ h3 {
   padding-left: 1.25rem;
 }
 
-.policy-nav li + li {
+.policy-nav li+li {
   margin-top: 0.35rem;
 }
 
@@ -680,7 +722,7 @@ h3 {
   color: var(--muted);
 }
 
-.policy-content section + section {
+.policy-content section+section {
   margin-top: 2.25rem;
 }
 
@@ -818,7 +860,7 @@ h3 {
     column-gap: 3.5rem;
   }
 
-  .text-columns > div:nth-last-child(2) {
+  .text-columns>div:nth-last-child(2) {
     padding-bottom: 0;
     border-bottom: 0;
   }
